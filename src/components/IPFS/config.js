@@ -26,9 +26,9 @@ export function getConfig(service) {
 }
 
 export function getDev() {
-  if (window.location.href.includes('https://app.ens.domains')) {
-    return false
-  } else {
-    return true
-  }
+  // if (window.location.href.includes('https://app.ens.domains')) {
+  return false
+  // } else {
+  //   return true
+  // }
 }

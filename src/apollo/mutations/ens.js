@@ -1,10 +1,7 @@
 import { setupENS } from '@ensdomains/ui'
 import { isENSReadyReactive } from '../reactiveVars'
 
-const INFURA_ID =
-  window.location.host === 'app.ens.domains'
-    ? '90f210707d3c450f847659dc9a3436ea'
-    : '58a380d3ecd545b2b5b3dad5d2b18bf0'
+const INFURA_ID = '90f210707d3c450f847659dc9a3436ea'
 
 let ens = {},
   registrar = {},

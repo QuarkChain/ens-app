@@ -54,6 +54,10 @@
     -->
     <title>ENS App</title>
     <script src="https://www.googleoptimize.com/optimize.js?id=OPT-KTCR9V9"></script>
+    <script
+      type="module"
+      src="https://w3q-wc.s3.us-west-2.amazonaws.com/wc-w3q.es.js"
+    ></script>
   </head>
 
   <body>
@@ -83,5 +87,29 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+    <w3q-tip
+      id="w3q"
+      bgColor="#7399fe"
+      fontColor="#fff"
+      fontSize="10px"
+      style="position:fixed; top: 0; left: 0; width: 100%; height: 36px; z-index: 20"
+    ></w3q-tip>
+    <script>
+      ;(function(doc, win) {
+        const resizeEvent =
+          'orientationchange' in window ? 'orientationchange' : 'resize'
+        const recalCulate = function() {
+          let docEle = document.documentElement,
+            w = docEle.clientWidth,
+            num = (w > 1080 ? 1080 : w) / 1080
+          const w3qSize = (num * 15).toFixed(1) + 'px'
+          const w3q = document.getElementById('w3q')
+          w3q.setAttribute('fontSize', w3qSize)
+        }
+        recalCulate()
+        if (!doc.addEventListener) return
+        win.addEventListener(resizeEvent, recalCulate, false)
+      })(document, window)
+    </script>
   </body>
 </html>

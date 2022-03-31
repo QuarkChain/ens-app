@@ -4,9 +4,13 @@ function createFetchUrl(name) {
 }
 
 function whitelisted() {
-  return ['app.ens.domains', 'ens.eth', 'ens.eth.link'].includes(
-    window.location.host
-  )
+  return [
+    'app.ens.domains',
+    'ens.eth',
+    'ens.eth.link',
+    'galileo.web3q.io',
+    'web3q.io'
+  ].includes(window.location.host)
 }
 
 export function requestCertificate(name) {

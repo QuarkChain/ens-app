@@ -79,8 +79,7 @@ import useReactiveVarListeners from './hooks/useReactiveVarListeners'
 import { GET_ERRORS } from './graphql/queries'
 
 //If we are targeting an IPFS build we need to use HashRouter
-const Router =
-  process.env.REACT_APP_IPFS === 'True' ? HashRouter : BrowserRouter
+const Router = HashRouter
 
 const HomePageLayout = ({ children }) => <Fragment>{children}</Fragment>
 
