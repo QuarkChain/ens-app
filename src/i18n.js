@@ -34,7 +34,7 @@ i18n
     backend: {
       loadPath:
         (process.env.REACT_APP_IPFS === 'True' ? '.' : '') +
-        '/app-ens-domain.eth/locales/{{lng}}.json'
+        '/locales/{{lng}}.json'
     }
   })
 

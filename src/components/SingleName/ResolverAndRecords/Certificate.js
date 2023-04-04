@@ -8,8 +8,8 @@ function whitelisted() {
     'app.ens.domains',
     'ens.eth',
     'ens.eth.link',
-    'galileo.web3q.io',
-    'web3q.io'
+    'w3link.io',
+    'w3eth.io'
   ].includes(window.location.host)
 }
 

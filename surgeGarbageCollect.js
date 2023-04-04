@@ -29,8 +29,8 @@ const whitelist = [
   'ensmanager.surge.sh',
   'animedrop.com',
   'djweddingphuket.com',
-  'galileo.web3q.io',
-  'web3q.io'
+  'w3link.io',
+  'w3eth.io'
 ]
 
 const removeSurgeDomain = domain => {
