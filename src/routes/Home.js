@@ -134,8 +134,7 @@ const Hero = styled('section')`
   display: flex;
   justify-content: center;
   align-items: center;
-  top: 36px;
-  height: calc(100vh - 36px);
+  height: calc(100vh - 52px);
   ${mq.medium`
     padding: 0 20px 0;
   `}
