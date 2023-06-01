@@ -72,7 +72,7 @@
     "start:ipfs": "REACT_APP_IPFS=True PUBLIC_URL='.' yarn start",
     "start:test": "REACT_APP_STAGE=local yarn start",
     "start:test:ipfs": "REACT_APP_STAGE=local yarn start:ipfs",
-    "build": "CI=false yarn react-serve build && yarn cacheBust",
+    "build": "CI=false GENERATE_SOURCEMAP=false yarn react-serve build && yarn cacheBust",
     "build:ipfs": "REACT_APP_IPFS=True PUBLIC_URL='.' yarn build",
     "postbuild": "cp build/index.html build/200.html && echo '*' > build/CORS",
     "test": "react-scripts test --env=./custom-test-env.js --transformIgnorePatterns \"node_modules/(?!@ensdomains)/\"",

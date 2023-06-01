@@ -45,7 +45,7 @@ const Header = styled('header')`
   justify-content: center;
   position: fixed;
   left: 0;
-  top: 0;
+  top: 52px;
   width: 100%;
   z-index: 2;
   box-shadow: 0 4px 8px 0 rgba(230, 240, 247, 0.8);
