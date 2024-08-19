@@ -22,6 +22,11 @@ config.optimization.providedExports = true
 config.optimization.mergeDuplicateChunks = true
 config.optimization.innerGraph = true
 config.optimization.flagIncludedChunks = true
+config.optimization.splitChunks = {
+  chunks: 'all',
+  minSize: 20000,
+  maxSize: 2097152 // 2MB
+}
 
 config.module.rules.push({
   test: /ens.+\.json$/,

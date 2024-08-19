@@ -20516,19 +20516,6 @@ w3c-xmlserializer@^2.0.0:
   dependencies:
     xml-name-validator "^3.0.0"
 
-w3q-deployer@^1.5.0:
-  version "1.5.0"
-  resolved "https://registry.npmmirror.com/w3q-deployer/-/w3q-deployer-1.5.0.tgz#62f68bbc8fdc99d60dadfe0da99917061cfd0f57"
-  integrity sha512-Jgesp2CAmeaNNSVZaRu1IYW4PVwlgDmEwjF7g1uZ6z3AXojNrNP8EGxAnz+SQo/Xso869ENNiiIhw6v8dphLPA==
-  dependencies:
-    colors-cli "^1.0.28"
-    eth-ens-namehash "^2.0.8"
-    ethers "^5.5.4"
-    fs "^0.0.1-security"
-    js-sha3 "^0.8.0"
-    minimist "^1.2.5"
-    rxjs "^7.5.5"
-
 wait-for-expect@^0.4.0:
   version "0.4.0"
   resolved "https://registry.npmjs.org/wait-for-expect/-/wait-for-expect-0.4.0.tgz#341c96ab89d6102a0169a9be6cd0de354de92c17"
